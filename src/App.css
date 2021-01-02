@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+.e-schedule  {
+  height: 100vh !important;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ReactModal__Overlay--after-open{
+  background-color:rgba(0, 0, 0, 0.5) !important
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.e-description{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-end;
+}
+.e-quick-popup-wrapper .e-description-icon::before{
+  display: none;
+}
+.e-quick-popup-wrapper .e-edit-icon::before{
+  display: none;
+}
+.e-quick-popup-wrapper .e-delete-icon::before{
+  display: none;
+}
+.register_user{
+  padding:10px;
+  background-color:#3f51b5;
+  color:white;
+  border:none;
+}
+
+form {
+  margin: 10px 0px;
+}
+
+input[type=text],input[type=email] {
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #3f51b5;
   color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
+input[type=submit]:hover {
+  background-color: #d4d9f7;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.model-form{
+  background-color:  #a09a9a
 }
